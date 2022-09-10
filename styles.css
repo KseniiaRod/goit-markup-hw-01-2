@@ -1,0 +1,254 @@
+:root {
+
+    /*Fonts */
+
+    --main-font:'Roboto', 'sans-sefir';
+    --secondary-font: 'Raleway', 'sans-sefir', 'Oleo Script';
+    --brand-color: #3f51b5;
+
+    /*Text color */
+    --main-txt-cl: #212121;
+    --accent-txt-cl: #2196F3;
+    --logo-txt-cl: #000000;
+    --light-txt-cl: #FFFFFF;
+    --dack-txt-cl: rgba(255, 255, 255, 0.6);
+    --grey-txt-cl: rgba(117, 117, 117, 1);
+
+    /*Background color */
+   --main-bg-cl: #FFFFFF;
+   --accent-bg-cl: #2196F3;
+   --dack-bg-cl: #2F303A;
+   --light-bg-cl: #F5F5F5;
+  }
+
+.page-header { 
+    color: var(--main-txt-cl);
+    background-color: var(--main-bg-cl);
+    gap: 25px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {margin: 0;}
+
+img { 
+    display: block;
+}
+.link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.header-list, 
+.outer-list,
+.nav-list,
+.contacts-list,
+.setion-list, 
+.Adress-list,
+.Team-list {
+    list-style: none;
+      }
+
+.header-container { 
+    display: flex;
+
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    width: 1600px;
+    background-image:linear-gradient
+    (to right, 
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/portfolio/hero/mainpicture.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    outline: 2px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    font-family: var(--main-font);
+     
+}
+
+.page-header {
+    background: var(--main-bg-cl)
+    
+}
+.logo-link {
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+}
+
+.page-header .link:hover,
+.page-header .link:focus {
+    color: var(--accent-txt-cl);
+}
+
+.logo-header {
+    margin-top: 24px;
+    color: var(--accent-txt-cl);
+    font-style:var( --secondary-font);
+    font-weight:700;
+    font-size: 14px;
+    line-height: 26px;  
+}
+
+.header .logo-header {
+    font-family: Raleway;
+}
+
+.logo-part {
+    color: var(--logo-txt-cl);
+}
+.navigation {
+    margin-left: 93px;
+    margin-right: auto;
+}
+.nav-list {
+    color: var(--main-txt-cl);
+    margin-top:  32px; ;
+}
+
+.nav {
+    margin-left: 93px;
+    margin-right: auto;
+
+}
+.nav-link {
+    color: var(--main-txt-cl);
+    padding: 32 0;
+    display: block;
+}
+
+.contacts-link {
+    display: block;
+    color: var(--grey-txt-cl);
+    padding: 32px 0;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+
+}
+
+.header-item {
+    margin-left: 93px;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl) ; 
+}
+
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-txt-cl);
+}
+
+<!--Portfolio Buttons-->
+
+.link.current {
+    color: var(--accent-txt-cl);
+}
+.outer-link {
+    display: block;
+    color: var(--grey-txt-cl);
+    padding: 32px 0;
+}
+.efectiv-solution {
+    background: var(--dack-bg-cl);
+    position: absolute;
+    width: 1600px;
+    height: 600px;  
+    left: 0px;
+    top: 80px;
+    
+}
+.efectiv-solution-title {
+    color: var(--light-txt-cl);
+    font-family: var(--main-font);
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    margin-top: 280px;     
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+      
+/* or 136% */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+}
+.Order-btn {
+   background-color: var(--accent-bg-cl);
+   position: absolute;
+width: 216px;
+height: 50px;
+margin-left: center;
+top: 430px;
+box-shadow: none;
+cursor: pointer;
+}
+
+.name-btn {
+    padding: 10px 32px;
+    color: var(--light-txt-cl);
+}
+
+.features-titel {
+    background: #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.features-1 {
+    font-style: var(--light-bg-cl);
+    font-weight:700;
+    font-size: 14px;
+    line-height: 16.5px;
+    color: var(--main-txt-cl);
+    margin-bottom: 20px;
+    margin-top: 774px; 
+}
+
+.features-items{
+    display: block;
+    color: var(--grey-txt-cl);
+    padding: 30px 0;
+    margin-top: 774px;
+    font-style:var(--main-txt-cl);
+    font-weight:400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.Team-list {
+Flex-basis: calc ((100% - 30px*2)/4);
+flex-wrap: no-wrap;
+outline: 2px solid red;
+}
+
+.list-item-address {
+}
+.contact_link {
+}
+
+
